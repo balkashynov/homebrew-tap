@@ -5,21 +5,21 @@
 class Wrok < Formula
   desc "A powerful command-line tool that combines lightweight todo management with time tracking"
   homepage "https://github.com/balkashynov/wrok"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/balkashynov/wrok/releases/download/v0.1.6/wrok_Darwin_x86_64.tar.gz"
-      sha256 "69396d2428218823f787d18901af8ce145e6b1f5db2c92bb298e0222062f7696"
+      url "https://github.com/balkashynov/wrok/releases/download/v0.1.7/wrok_Darwin_x86_64.tar.gz"
+      sha256 "0efeec473ff609ca07788bbaee20eb490d8d7e8614b7549b18d6e9b57e14a774"
 
       def install
         bin.install "wrok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/balkashynov/wrok/releases/download/v0.1.6/wrok_Darwin_arm64.tar.gz"
-      sha256 "3c74ed635135c918e76a817caaf33b67178f26dd398287a056782b3063bfd7fc"
+      url "https://github.com/balkashynov/wrok/releases/download/v0.1.7/wrok_Darwin_arm64.tar.gz"
+      sha256 "e62ab20884ceaefb5a6989a40de08a0a3e63537644ee34a93011e4edc1990f0c"
 
       def install
         bin.install "wrok"
@@ -29,15 +29,15 @@ class Wrok < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/balkashynov/wrok/releases/download/v0.1.6/wrok_Linux_x86_64.tar.gz"
-      sha256 "304f0d5f655395fa3e2433814feebebc83e44a5ee6a6aaea53d795d2454f0cb4"
+      url "https://github.com/balkashynov/wrok/releases/download/v0.1.7/wrok_Linux_x86_64.tar.gz"
+      sha256 "cc8a0f137668c5f2b22c564fd68fcca69812b7bbb66256f44bfd5fc628eedf2d"
       def install
         bin.install "wrok"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/balkashynov/wrok/releases/download/v0.1.6/wrok_Linux_arm64.tar.gz"
-      sha256 "62836f0af1ea6c7a65c535eab9b6135c65bd85a08160eb4e4b67596dd248107e"
+      url "https://github.com/balkashynov/wrok/releases/download/v0.1.7/wrok_Linux_arm64.tar.gz"
+      sha256 "4a9c259c9669461efd1a508dd1d0c3254f0c8a550ca5ecdbc903a014b44b1067"
       def install
         bin.install "wrok"
       end
